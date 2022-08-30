@@ -36,6 +36,7 @@ body {
 .navigation.active {
   width: 210px;
   transition: 0.5s;
+  z-index: 5;
 }
 
 .navigation ul li {
@@ -446,10 +447,21 @@ table tr td:nth-child(4) {
 
 @media screen and (min-width: 960px) {
   .stats-container {
+    width: 90%;
     max-width: 100%;
+    /* margin: auto; */
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 120px;
   }
+
+  .stats-container-details{
+    padding: 1.5rem;
+  }
+
+  /* .main.active .stats-container{
+    width: 80%;
+    margin: auto;
+  } */
 
   .section-wrapper {
     width: 90%;
