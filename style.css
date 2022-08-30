@@ -37,6 +37,7 @@ body {
   width: 210px;
   transition: 0.5s;
   z-index: 5;
+  overflow: auto;
 }
 
 .navigation ul li {
