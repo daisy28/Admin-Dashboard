@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <ul>
+          <li>
+            <a href="">
+              <span><ion-icon name="timer-outline"></ion-icon></span>
+              <span>ShopOClock</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span><ion-icon name="home"></ion-icon></span>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span><ion-icon name="people"></ion-icon></span>
+              <span>Customers</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span><ion-icon name="document-attach"></ion-icon></span>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span><ion-icon name="cart"></ion-icon></span>
+              <span>Orders</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span><ion-icon name="folder-open"></ion-icon></span>
+              <span>Inventory</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span><ion-icon name="person"></ion-icon></span>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span><ion-icon name="settings"></ion-icon></span>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span><ion-icon name="log-out"></ion-icon></span>
+              <span>Sign Out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="top-bar">
+        <div class="menu-toggle"><ion-icon name="menu"></ion-icon></div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search here" />
+          <ion-icon name="search"></ion-icon>
+        </div>
+        <div class="user">
+          <img src="white girl.jpg" alt="image of the user" />
+        </div>
+      </div>
+
+      <section>
+        <div class="stats-container">
+          <div class="stats-container-details">
+            <div class="stats-text">
+              <span><p>1504</p></span>
+              <span><p>Daily Views</p></span>
+            </div>
+            <div class="stats-icon"><ion-icon name="eye"></ion-icon></div>
+          </div>
+
+          <div class="stats-container-details">
+            <div class="stats-text">
+              <span><p>80</p></span>
+              <span><p>Sales</p></span>
+            </div>
+            <div class="stats-icon"><ion-icon name="cart"></ion-icon></div>
+          </div>
+
+          <div class="stats-container-details">
+            <div class="stats-text">
+              <span><p>284</p></span>
+              <span><p>Comments</p></span>
+            </div>
+            <div class="stats-icon">
+              <ion-icon name="chatbubbles"></ion-icon>
+            </div>
+          </div>
+
+          <div class="stats-container-details">
+            <div class="stats-text">
+              <span><p>7,842</p></span>
+              <span><p>Earning</p></span>
+            </div>
+            <div class="stats-icon"><ion-icon name="cash"></ion-icon></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-wrapper">
+        <section class="section-two">
+          <div class="order-inventory">
+            <div class="order-header-text">
+              <p>Recent Orders</p>
+              <p><a href="#"> View All</a></p>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <td>Name</td>
+                  <td>Price</td>
+                  <td>Payment</td>
+                  <td>Status</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Iphone 7 Pro Max</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Star Refridgerator</td>
+                  <td>$150</td>
+                  <td>Due</td>
+                  <td><span class="delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Windows Cooler</td>
+                  <td>$680</td>
+                  <td>Paid</td>
+                  <td><span class="returned">Return</span></td>
+                </tr>
+                <tr>
+                  <td>Speakers</td>
+                  <td>$400</td>
+                  <td>Due</td>
+                  <td><span class="in-progress">In Progress</span></td>
+                </tr>
+                <tr>
+                  <td>Hp Laptop</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Apple Watch</td>
+                  <td>$300</td>
+                  <td>Paid</td>
+                  <td><span class="pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Wall Fan</td>
+                  <td>$200</td>
+                  <td>Paid</td>
+                  <td><span class="returned">Return</span></td>
+                </tr>
+                <tr>
+                  <td>Adidas Shoes</td>
+                  <td>$800</td>
+                  <td>Due</td>
+                  <td><span class="in-progress">In Progress</span></td>
+                </tr>
+                <tr>
+                  <td>Denim Shirts</td>
+                  <td>$510</td>
+                  <td>Paid</td>
+                  <td><span class="delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Casual Shoes</td>
+                  <td>200</td>
+                  <td>Paid</td>
+                  <td><span class="pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Hair Stretcher</td>
+                  <td>$450</td>
+                  <td>Due</td>
+                  <td><span class="delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Smart TV</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="in-progress">In Progress</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="section-three">
+          <div>
+            <p>Recent Customers</p>
+            <div class="customer-details">
+              <div class="customer-info">
+                <div class="img-wrapper">
+                  <img src="white girl.jpg" alt="recent customers picture" />
+                </div>
+                <div>
+                  <span>Amelia</span>
+                  <span>France</span>
+                </div>
+              </div>
+              <div class="icon-wrapper">
+                <a href="#"><ion-icon name="call-outline"></ion-icon></a>
+                <a href="#"
+                  ><ion-icon name="chatbubble-ellipses-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <div class="customer-details">
+              <div class="customer-info">
+                <div class="img-wrapper">
+                  <img src="download.jpg" alt="recent customers picture" />
+                </div>
+                <div>
+                  <span>Mosh</span>
+                  <span>India</span>
+                </div>
+              </div>
+              <div class="icon-wrapper">
+                <a href="#"><ion-icon name="call-outline"></ion-icon></a>
+                <a href="#"
+                  ><ion-icon name="chatbubble-ellipses-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <div class="customer-details">
+              <div class="customer-info">
+                <div class="img-wrapper">
+                  <img src="images.jpg" alt="recent customers picture" />
+                </div>
+                <div>
+                  <span>Olivia</span>
+                  <span>USA</span>
+                </div>
+              </div>
+              <div class="icon-wrapper">
+                <a href="#"><ion-icon name="call-outline"></ion-icon></a>
+                <a href="#"
+                  ><ion-icon name="chatbubble-ellipses-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <div class="customer-details">
+              <div class="customer-info">
+                <div class="img-wrapper">
+                  <img src="images (1).jpg" alt="recent customers picture" />
+                </div>
+                <div>
+                  <span>Amil</span>
+                  <span>Japan</span>
+                </div>
+              </div>
+              <div class="icon-wrapper">
+                <a href="#"><ion-icon name="call-outline"></ion-icon></a>
+                <a href="#"
+                  ><ion-icon name="chatbubble-ellipses-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <div class="customer-details">
+              <div class="customer-info">
+                <div class="img-wrapper">
+                  <img src="images (2).jpg" alt="recent customers picture" />
+                </div>
+                <div>
+                  <span>Diana</span>
+                  <span>Nigeria</span>
+                </div>
+              </div>
+              <div class="icon-wrapper">
+                <a href="#"><ion-icon name="call-outline"></ion-icon></a>
+                <a href="#"
+                  ><ion-icon name="chatbubble-ellipses-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <div class="customer-details">
+              <div class="customer-info">
+                <div class="img-wrapper">
+                  <img src="images (3).jpg" alt="recent customers picture" />
+                </div>
+                <div>
+                  <span>Josh</span>
+                  <span>London</span>
+                </div>
+              </div>
+              <div class="icon-wrapper">
+                <a href="#"><ion-icon name="call-outline"></ion-icon></a>
+                <a href="#"
+                  ><ion-icon name="chatbubble-ellipses-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <div class="customer-details">
+              <div class="customer-info">
+                <div class="img-wrapper">
+                  <img src="images (4).jpg" alt="recent customers picture" />
+                </div>
+                <div>
+                  <span>Ashraf</span>
+                  <span>Malaysia</span>
+                </div>
+              </div>
+              <div class="icon-wrapper">
+                <a href="#"><ion-icon name="call-outline"></ion-icon></a>
+                <a href="#"
+                  ><ion-icon name="chatbubble-ellipses-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+
+            <div class="customer-details">
+              <div class="customer-info">
+                <div class="img-wrapper">
+                  <img src="images.jpg" alt="recent customers picture" />
+                </div>
+                <div>
+                  <span>Olivia</span>
+                  <span>USA</span>
+                </div>
+              </div>
+              <div class="icon-wrapper">
+                <a href="#"><ion-icon name="call-outline"></ion-icon></a>
+                <a href="#"
+                  ><ion-icon name="chatbubble-ellipses-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+      let navigation = document.querySelector(".navigation");
+      let toggle = document.querySelector(".menu-toggle");
+      let main = document.querySelector("main");
+      toggle.onclick = function () {
+        navigation.classList.toggle("active");
+        main.classList.toggle("active");
+      };
+
+      let list = document.querySelectorAll(".navigation li");
+      function activeLink() {
+        list.forEach((item) => item.classList.remove("hovered"));
+        this.classList.add("hovered");
+      }
+      list.forEach((item) => item.addEventListener("mouseover", activeLink));
+    </script>
+  </body>
+</html>

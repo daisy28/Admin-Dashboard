@@ -1,0 +1,482 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --blue: #287bff;
+  --white: #fff;
+  --grey: #f5f5f5;
+  --black1: #222;
+  --black2: #999;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.navigation {
+  width: 75px;
+  height: 100vh;
+  background-color: var(--blue);
+  border-left: 6px solid var(--blue);
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.navigation.active {
+  width: 210px;
+  transition: 0.5s;
+}
+
+.navigation ul li {
+  padding: 1rem 0;
+  position: relative;
+}
+
+.navigation ul li:nth-child(1) {
+  margin-bottom: 2rem;
+  pointer-events: none;
+  font-weight: 700;
+}
+
+.navigation ul li:hover {
+  background-color: var(--white);
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.navigation ul li:hover a::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: transparent;
+  right: 0;
+  top: -46px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 25px 25px 0 20px var(--white);
+  pointer-events: none;
+}
+
+.navigation ul li:hover a::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: transparent;
+  right: 0;
+  bottom: -46px;
+  border-top-right-radius: 30px;
+  box-shadow: 25px -25px 0 20px var(--white);
+  pointer-events: none;
+}
+
+.navigation ul li a {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: var(--white);
+  padding: 0 1rem;
+}
+
+.navigation ul li:nth-child(9) {
+  line-height: 14px;
+}
+
+.navigation ul li:hover a {
+  color: var(--blue);
+}
+
+.navigation ul li a ion-icon {
+  display: block;
+  padding-right: 1.4rem;
+  font-size: 2rem;
+}
+
+.main {
+  position: absolute;
+  width: calc(100% - 75px);
+  left: 75px;
+  right: 0;
+  transition: 0.5s;
+}
+.main.active {
+  width: calc(100% - 210px);
+  left: 210px;
+  right: 0;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.main.active .search-bar {
+  display: none;
+  transition: 0.5s;
+}
+
+.top-bar {
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 0 1.5px rgb(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.menu-toggle ion-icon {
+  color: var(--black1);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.search-bar {
+  position: relative;
+  width: 40%;
+}
+
+.search-bar input {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  border-radius: 20px;
+  padding: 0.2rem 2rem;
+  border: 1px solid var(--black2);
+  outline: none;
+}
+
+.search-bar input::placeholder {
+  color: var(--black2);
+}
+
+.search-bar ion-icon {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  color: var(--black2);
+}
+
+.user {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.user img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stats-container-details {
+  width: 80%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+  border-radius: 30px;
+  padding: 1.5rem 2.5rem;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08), -0 -7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.stats-container-details:hover {
+  background-color: var(--blue);
+  color: #fff;
+  cursor: pointer;
+}
+
+.stats-container-details:hover .stats-text span,
+.stats-container-details:hover .stats-icon ion-icon {
+  color: var(--white);
+}
+
+.stats-text span:nth-child(1) {
+  font-size: 2rem;
+  color: var(--blue);
+}
+
+.stats-text span:nth-child(2) {
+  font-size: 0.8rem;
+  color: var(--black2);
+}
+
+.stats-icon ion-icon {
+  font-size: 2.7rem;
+  color: var(--black2);
+}
+
+.section-two {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.09), -0 -0 25px rgba(0, 0, 0, 0.09);
+  width: 80%;
+  max-width: 400px;
+  border-radius: 30px;
+  padding: 2rem;
+  margin: 2rem auto;
+  overflow-x: scroll;
+}
+
+.order-inventory {
+  width: 250%;
+}
+
+.order-header-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-header-text p:nth-child(1) {
+  color: var(--blue);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.order-header-text p:nth-child(2) {
+  background-color: var(--blue);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.order-header-text a {
+  color: var(--white);
+}
+
+table {
+  width: 100%;
+  margin-top: 4rem;
+  border-collapse: collapse;
+}
+table thead tr {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+table thead tr td:nth-child(3) {
+  text-align: center;
+}
+
+table tr {
+  color: var(--black1);
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+table tr:last-child {
+  border-bottom: none;
+}
+
+table tbody tr:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+table tr td {
+  padding: 0.625rem;
+}
+
+table tr td:nth-child(3) {
+  text-align: center;
+}
+
+table tr td:nth-child(4) {
+  text-align: right;
+}
+
+.delivered,
+.returned,
+.pending,
+.in-progress {
+  background: green;
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.125rem 0.25rem;
+}
+
+.returned {
+  background: red;
+}
+
+.pending {
+  background: orange;
+}
+
+.in-progress {
+  background: blue;
+}
+
+.section-three {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.09), -0 -0 25px rgba(0, 0, 0, 0.09);
+  width: 80%;
+  max-width: 400px;
+  border-radius: 30px;
+  padding: 2rem;
+  margin: 2rem auto;
+}
+
+.section-three p {
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.customer-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.customer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customer-details:hover {
+  background-color: var(--blue);
+}
+
+.customer-details:hover .customer-info span,
+.customer-details:hover .icon-wrapper a ion-icon {
+  color: #fff;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.customer-info span {
+  display: block;
+  padding-left: 0.5rem;
+}
+
+.customer-info span:nth-child(1) {
+  color: var(--black1);
+  font-weight: 500;
+}
+
+.customer-info span:nth-child(2) {
+  color: var(--black2);
+  font-size: 0.775rem;
+}
+
+.icon-wrapper a:first-child {
+  padding: 0 0.3rem;
+}
+
+.icon-wrapper ion-icon {
+  font-size: 1.5rem;
+  color: var(--blue);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 600px) {
+  .main.active .search-bar {
+    display: block;
+    transition: 0.5s;
+  }
+
+  .stats-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    gap: 20px;
+  }
+
+  .stats-container-details {
+    margin: 0;
+    width: 100%;
+  }
+
+  .section-two {
+    width: 90%;
+    max-width: 600px;
+    overflow-x: hidden;
+  }
+
+  .order-inventory {
+    width: 100%;
+  }
+
+  .section-three {
+    width: 90%;
+    max-width: 600px;
+  }
+
+  .customer-info span {
+    padding-left: 2rem;
+  }
+
+  .icon-wrapper a:first-child {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .stats-container {
+    max-width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 120px;
+  }
+
+  .section-wrapper {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+
+  .section-two {
+    width: 100%;
+    max-width: 100%;
+    margin: 2rem auto;
+  }
+
+  .section-three {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.5rem;
+    margin: 2rem auto;
+  }
+
+  .customer-info span {
+    padding-left: 1rem;
+  }
+
+  .icon-wrapper a:first-child {
+    padding: 0 1rem;
+  }
+}
